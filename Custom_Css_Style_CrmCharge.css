@@ -1,50 +1,62 @@
-h3, h6, WalletPageLogo, .RContainer, .ms-crm-FormSection-Container .ms-crm-FormSection tr:first-child, .n-button-cancel{ display:none}
-*{ float:left; clear:none !important}
-body, .CardContainer{ background-color:transparent}
+h3, h6, WalletPageLogo, .RContainer, .ms-crm-FormSection-Container .ms-crm-FormSection tr:first-child, .n-button-cancel, #Billto_AddressLine3 { display: none; }
+
+* { float: left; clear: none !important; }
+
+body, .CardContainer { background-color: transparent; }
+
 html,
 html body,
-html body div *{ margin:0 !important; padding:0 !important; font-size:11px; font-family:Segoe\000020UI,Tahoma,Arial}
-input[type="text"]{ height:18px; border:1px solid #E2E3EA; border-top:1px solid #ABADB3}
+html body div * { margin: 0 !important; padding: 2px 0!important; font-size: 11px; font-family: Segoe\000020UI,Tahoma,Arial; }
+
+input[type="text"], select { height: 18px; border: 1px solid #E2E3EA; border-top: 1px solid #ABADB3; border-radius: 0 !important; }
+
+
 
 .Wallet,
-#payment, #billaddress,
-.n-section-wallecardcontent, .CardContainer
-{ width:100%;display:table; table-layout:fixed}
 
-.CardNumber, .CardDate, .NameOnCard,
-.Street, .City, .State, .Zip, .Country, .walletBilltoPhone, .Email_CreateWallet{width:49.75%;display:table; table-layout:fixed; margin-bottom:12px !important}
+.n-section-wallecardcontent, .CardContainer { width:100%; display: table; table-layout: fixed; }
 
-.CardNumber label, .CardDate label, .NameOnCard label,
-.Street label, .City label, .State label, .Zip label, .Country label, .walletBilltoPhone label, .Email_CreateWallet label{ display:table-cell; width:110px;float:none !important; vertical-align:middle }
+.CardNumber, .CardDate, .NameOnCard, .AccountType, .AccountNumber, .ABANumber, .Driverlic, .SSN, .CardDate, .State, .Country, .Email_CreateWallet, .ABANumber, .Driverlic, .Street, .City, .State, .Zip, .Country, .walletBilltoPhone, .Email_CreateWallet { width: 100%; display: table; table-layout: fixed; }
 
-.CardNumber div, .CardDate div, .NameOnCard div,
-.Street div, .City div, .State div, .Zip div, .Country div, .walletBilltoPhone div, .Email_CreateWallet div{ display:table-cell;float:none !important;width:auto  }
+    .CardNumber label, .CardDate label, .NameOnCard label,
+    .Street label, .City label, .State label, .Zip label, .Country label, .walletBilltoPhone label, .Email_CreateWallet label, .AccountType label, .AccountNumber label, .ABANumber label, .Driverlic label, .SSN label { display: table-cell; width: 142px; float: none !important; vertical-align: middle; }
 
-.CardNumber input[type="text"], .CardDate input[type="text"], .NameOnCard input[type="text"],
-.Street input[type="text"], .City input[type="text"], .State input[type="text"], .Zip input[type="text"], .Country input[type="text"], .walletBilltoPhone input[type="text"], .Email_CreateWallet input[type="text"]{ width:100% !important}
+    .CardNumber div, .CardDate div, .NameOnCard div,
+    .Street div, .City div, .State div, .Zip div, .Country div, .walletBilltoPhone div, .Email_CreateWallet div { display: table-cell; float: none !important; width: auto; }
 
-.CardContainer .CardDate label{ padding-left:5px;}
-.CardContainer .CardDate #exptime1[type="text"], .CardContainer .CardDate  #exptime2[type="text"]{min-width:110px !important; width:30% !important; float:left !important}
-.CardContainer .CardDate #exptime1[type="text"]{ margin-right:3% !important}
+    .CardNumber input[type="text"], .CardDate input[type="text"], .NameOnCard input[type="text"],
+    .Street input[type="text"], .City input[type="text"], .State input[type="text"], .Zip input[type="text"], .Country input[type="text"], .walletBilltoPhone input[type="text"], .Email_CreateWallet input[type="text"],
+    .AccountType select, .AccountNumber input[type="text"], .ABANumber input[type="text"], .Driverlic input[type="text"], .SSN input[type="text"] { width: 558px !important; }
+
+.CardContainer .CardDate label { padding-left: 5px; }
+
+.CardContainer .CardDate #exptime1[type="text"], .CardContainer .CardDate #exptime2[type="text"] {width: 150px !important; float: left !important; }
+    .NameOnCard .FirstName{ width:290px;margin-right:25px !important;display:table; table-layout:fixed; float:left !important}
+    .NameOnCard .MiddleInitial{ width:140px; margin-right:15px !important;  display:table; table-layout:fixed; float:left !important}
+    .NameOnCard .LastName{ display:table; table-layout:fixed; float:left !important}
+
+    .NameOnCard .FirstName input,
+    .NameOnCard .LastName input{ width:150px !important;}
+    .NameOnCard .MiddleInitial input{width:48px !important;}
+     .NameOnCard .LastName label{ width:80px !important;}
+    .NameOnCard .MiddleInitial label{width:80px !important;}
 
 
-.NameOnCard .FirstName{ width:38%;margin-right:3% !important;display:table; table-layout:fixed; float:left !important}
-.NameOnCard .MiddleInitial{ width:18%; margin-right:3% !important;  display:table; table-layout:fixed; float:left !important}
-.NameOnCard .LastName{ width:38%;display:table; table-layout:fixed; float:left !important}
 
-.NameOnCard .FirstName,
-.NameOnCard .LastName { min-width:200px !important;}
-.NameOnCard .MiddleInitial {min-width:120px !important;}
-.NameOnCard .FirstName input,
-.NameOnCard .LastName input{ min-width:60px !important;}
-.NameOnCard .MiddleInitial input{min-width:20px !important;}
 
-.Street input[type="text"]{ width:30% !important; float:left !important;}
-.Street #Billto_AddressLine1[type="text"], .Street #Billto_AddressLine2[type="text"] { margin-right:3% !important;}
-.Street #Billto_AddressLine3[type="text"] { position:relative; left:3.5%;}
+.Street #Billto_AddressLine1[type="text"] { margin-right: 3% !important; margin-bottom:5px !important; }
+.Street label {  position:relative; top:-15px !important  }
 
-.CardDate, .City, .Zip, .walletBilltoPhone { width:50% !important; position:relative; left:20px !important}
- 
- iframe{ width:100% !important; padding:0}
- #paybutton{ float:right !important}
- #paybutton input{ margin-left:20px !important;}
+
+
+iframe { width: 100% !important; padding: 0; }
+
+#paybutton { float: left !important;  margin-right:5px !important}
+
+    #paybutton input { margin-left: 20px !important; }
+
+select { height: 24px; line-height: 24px; }
+
+.AccountNumber, .SSN { clear: both !important; }
+#payment, #billaddress { float:left; clear: both !important; width:703px !important; margin-top:-10px !important }
+.buttonContainer_S {width:703px !important; float:left !important; clear:both !important }
