@@ -1,0 +1,34 @@
+﻿$(document).ready(function () {
+    
+	// Wallet Page
+	$("#WalletCreditCard_CardNumber").css("width","200px");
+    $("#WalletCreditCard_CardNumber").css("height","34px");
+
+	// Checkout Page
+    $("#NewCard_CardNumber").css("width","200px");
+    $("#NewCard_CardNumber").css("height","34px");
+	
+    $("#exptime1").css("width","50px");
+    $("#exptime1").css("height","34px");
+    $("#exptime2").css("width","50px");
+    $("#exptime2").css("height","34px");
+
+	$("#NewCard_CardHolderFirstName").css("width","100px");
+	$("#NewCard_CardHolderFirstName").css("height","34px");
+
+	$("#NewCard_CardHolderMiddleName").css("width","50px");
+	$("#NewCard_CardHolderMiddleName").css("height","34px");
+	
+	$("#NewCard_CardHolderLastName").css("width","100px");
+	$("#NewCard_CardHolderLastName").css("height","34px");
+
+	
+    //$("h6.ccinput-issavecard input[type='checkbox']").die();
+    $('#btn_Save').val('Confirm ');
+    $(".NewWalletCard").empty();
+
+    var amt = $("#TrxAmount").val();
+    if (amt != null && amt == '0.00') {
+        $("#TrxAmount").val('0.01');
+    }
+});
