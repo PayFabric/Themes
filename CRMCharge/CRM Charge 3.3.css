@@ -1,0 +1,878 @@
+@media (min-width: 768px){
+    .Title, .NewWalletCard, .MiddleInitial, #billaddress h5, #payment h5 {
+        display: none !important;
+    }
+    
+    .credit_box {
+        background-color: inherit;
+        padding: 10px;
+    }
+    
+    .container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    html {
+        overflow: hidden;
+    }
+    
+    .billing {
+        padding: 10px;
+    }
+    
+    #trxL2Field, #summary, .buttonBox, .buttonContainer.buttonContainer-CheckoutPage, #trxL3Field, #trxHeadUserDefinedField, #trxLineUserDefinedField, #shipaddress {
+        visibility: hidden;
+        position: absolute;
+    }
+    
+    .CardContainer .RContainer {
+        display: initial !important;
+        left: 600px;
+        z-index:99999;
+    }
+    
+        .CardContainer .RContainer img {
+            width: 36px;
+            height: 36px;
+        }
+    
+    .historycards {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        margin: 0 !important;
+        width: 670px;
+        z-index: 9999;
+    }
+    
+    body {
+        background: inherit;
+    }
+    
+    .ContainerSub {
+        position: absolute;
+    }
+    
+    .CardContainer .row div:nth-child(3) {
+        left: -33%;
+    }
+    
+    .billing .row > div:nth-child(3) {
+        margin-left: 8.33333333%;
+        right: 8.33333333%;
+        top: -150px;
+    }
+    
+    .gdw p {
+        width: 100%;
+    }
+    
+    .CardContainer .row > div:nth-child(6) {
+        margin-left: 8.33333333%;
+        right: 8.33333333%;
+    }
+    
+    #Payment {
+        width: 100% !important;
+        min-height: 260px;
+        max-width: 1010px;
+        margin-left: 2px !important;
+        float: none !important;
+    }
+    
+        .n-section-wallecardcontent, #payment > div {
+            width: 100%;
+            height: 100%;
+        }
+    
+    .CardContainer {
+        min-height: 230px;
+        width: 100%;
+        height: 100%;
+        float: none;
+        clear: inherit;
+        overflow: initial;
+        background: inherit;
+        position: initial;
+        padding: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+        box-sizing: border-box;
+    }
+    
+    .AuthorizeCode {
+        position: absolute;
+        max-width: 333px;
+        left: -33%;
+        top: 61px;
+    }
+    
+    .checkbox {
+        position: absolute;
+        top: -80px;
+    }
+    
+    .State {
+        position: absolute;
+        top: 78px;
+        left: 340px;
+    }
+    
+    .Zip {
+        position: absolute;
+        top: 150px;
+        left: 0;
+    }
+    
+    .Country, #billaddress > #Billto_CountryCode, .Country_CreateWallet {
+        position: absolute;
+        left: 340px;
+        top: 150px;
+    }
+    
+    .walletBilltoPhone {
+        position: absolute;
+        left: 0;
+        top: 222px;
+    }
+    
+    .Email_CreateWallet, #billaddress > #Billto_Email {
+        position: absolute;
+        left: 340px;
+        top: 222px;
+    }
+    
+    #paybutton, .CardContainer .row div:nth-child(2) {
+        visibility: hidden;
+    }
+    
+    #WalletECheck_ABANumber, #WalletECheck_SSN {
+        margin-left: 4px;
+    }
+    
+    .Checkoutpage {
+        margin: 0 !important;
+        width: 100% !important;
+        overflow: inherit !important;
+    }
+    
+    #NewBillAddresses_AddressLine1, #NewBillAddresses_AddressLine2, #Billto_AddressLine2, #Billto_AddressLine1 {
+        margin-bottom: 3px !important;
+    }
+    
+    #NewBillAddresses_CountryCode, #billaddress > #Billto_CountryCode {
+        top: 172px;
+    }
+    
+    label.Trx_BillCountry.redtext, label.Country_CreateWallet {
+        top: 150px;
+    }
+    
+    label.Trx_BillPhone, #NewBillAddresses_Phone1, label.walletBilltoPhone, #billaddress > #Billto_Phone1 {
+        position: absolute;
+        left: 0;
+    }
+    
+    label.Trx_BillEmail, #NewBillAddresses_Email, label.Trx_BillCountry.redtext, #NewBillAddresses_CountryCode, .City {
+        position: absolute;
+        left: 340px;
+    }
+    
+    label.Trx_BillEmail, label.Trx_BillPhone, label.Email_CreateWallet, label.walletBilltoPhone {
+        top: 222px;
+    }
+    
+    #NewBillAddresses_Email, #NewBillAddresses_Phone1, #billaddress > #Billto_Email, #billaddress > #Billto_Phone1 {
+        top: 244px;
+    }
+    
+    .Checkoutpage #payment .CardContainer .CheckNumber, .Wallet #payment .CardContainer .CheckNumber {
+        position: absolute !important;
+        top: 144px !important;
+        left: 340px !important;
+        margin: 0 !important;
+        float: left;
+    }
+    
+    .Wallet #payment .CardContainer .CheckNumber {
+        top: 72px !important;
+    }
+    
+    .Checkoutpage #payment .CardContainer .ABANumber, .Wallet #payment .CardContainer .ABANumber {
+        position: absolute !important;
+        top: 216px !important;
+        left: 340px !important;
+        margin: 0 !important;
+    }
+    
+    .Wallet #payment .CardContainer .ABANumber {
+        top: 144px !important;
+    }
+    
+    .Checkoutpage #payment .CardContainer .DS_Container .Driverlic, .Wallet #payment .CardContainer .DS_Container .Driverlic {
+        position: absolute !important;
+        top: 0 !important;
+        left: 340px !important;
+        margin: 0 !important;
+    }
+    
+    .Checkoutpage #payment .CardContainer .CardNumber, .Wallet #payment .CardContainer .CardNumber {
+        margin: 0 !important;
+        padding: 0 !important;
+        left: 0 !important;
+        position: absolute !important;
+        top: 144px !important;
+    }
+    
+    .Wallet #payment .CardContainer .CardNumber {
+        top: 72px !important;
+    }
+    
+    .Checkoutpage #payment .CardContainer > .CardDate, .Wallet #payment .CardContainer > .CardDate {
+        position: absolute !important;
+        top: 144px;
+        left: 340px !important;
+    }
+    
+    .Wallet #payment .CardContainer > .CardDate {
+        top: 72px;
+    }
+    
+    .Checkoutpage #payment .CardContainer .CardNumber .CardDate, .Wallet #payment .CardContainer .CardNumber .CardDate {
+        position: absolute !important;
+        left: 340px !important;
+        width: 100% !important;
+    }
+    
+    .Checkoutpage #payment .CardContainer .CardNumber .cvv2, .Wallet #payment .CardContainer .CardNumber .cvv2 {
+        position: absolute;
+        left: 0;
+        top: 72px;
+        margin: 0;
+    }
+    
+    .Wallet #payment .CardContainer .CardNumber .cvv2 {
+        top: 0;
+    }
+    
+    .Checkoutpage #payment .CardContainer .AuthorizeCode, .Wallet #payment .CardContainer .AuthorizeCode {
+        position: absolute !important;
+        left: 340px;
+        top: 216px;
+    }
+    
+    .Wallet #payment .CardContainer .AuthorizeCode {
+        top: 144px;
+    }
+    
+    .Checkoutpage #payment .CardContainer .savecard_h6Container, .Wallet #payment .CardContainer .savecard_h6Container {
+        position: absolute !important;
+        top: 288px;
+    }
+    
+    .Wallet #payment .CardContainer .savecard_h6Container {
+        top: 216px;
+    }
+    
+    .Checkoutpage #payment .CardContainer .AccountType, .Wallet #payment .CardContainer .AccountType {
+        position: absolute !important;
+        top: 144px !important;
+        left: 0 !important;
+        margin: 0 !important;
+    }
+    
+    .Wallet #payment .CardContainer .AccountType {
+        top: 72px !important;
+    }
+    
+    .Checkoutpage #payment .CardContainer .NameOnCard, .Wallet #payment .CardContainer .NameOnCard {
+        position: absolute !important;
+        top: 72px !important;
+        left: 0 !important;
+        margin: 0 !important;
+    }
+    
+    .Wallet #payment .CardContainer .NameOnCard {
+        top: 0 !important;
+    }
+    
+        .Checkoutpage #payment .CardContainer .NameOnCard .LastName, .Wallet #payment .CardContainer .NameOnCard .LastName {
+            margin-left: 0 !important;
+            left: 340px !important;
+            position: absolute;
+        }
+    
+    .Checkoutpage #payment .CardContainer .DS_Container, .Wallet #payment .CardContainer .DS_Container {
+        position: absolute !important;
+        top: 288px !important;
+        left: 0 !important;
+        width: 100% !important;
+    }
+    
+    .Wallet #payment .CardContainer .DS_Container {
+        top: 216px !important;
+    }
+    
+        .Checkoutpage #payment .CardContainer .DS_Container .SSN, .Wallet #payment .CardContainer .DS_Container .SSN {
+            position: absolute !important;
+            top: 0 !important;
+            left: 0 !important;
+            margin: 0 !important;
+        }
+    
+    .Checkoutpage #payment .CardContainer > .Driverlic, .Wallet #payment .CardContainer > .Driverlic {
+        position: absolute !important;
+        top: 288px !important;
+        left: 340px !important;
+        margin: 0 !important;
+    }
+    
+    .Wallet #payment .CardContainer > .Driverlic {
+        top: 216px !important;
+    }
+    
+    .Checkoutpage #payment .CardContainer > .SSN, .Wallet #payment .CardContainer > .SSN {
+        position: absolute !important;
+        top: 288px !important;
+        left: 0 !important;
+        margin: 0 !important;
+    }
+    
+    .Wallet #payment .CardContainer > .SSN {
+        top: 216px !important;
+    }
+    
+    .Wallet .CustomerCSS-wallet_Echeck {
+        position: absolute !important;
+        top: 288px !important;
+        left: 0 !important;
+        margin: 0 !important;
+    }
+    
+    .CardContainer > h6.checkbox, .Checkoutpage #payment .CardContainer .AccountNumber, .Wallet #payment .CardContainer .AccountNumber {
+        position: absolute !important;
+        top: 216px !important;
+        left: 0 !important;
+        margin: 0 !important;
+    }
+    
+    .Wallet #payment .n-section-wallecardcontent .CardContainer > h6.checkbox, .Wallet #payment .CardContainer .AccountNumber {
+        top: 144px !important;
+    }
+    
+    .Fix_CC {
+        border-bottom: none;
+        margin: 0;
+    }
+    
+    #WalletECheck_SSN, #WalletECheck_ABANumber, #WalletECheck_DriverLicense {
+        margin-left: 0;
+    }
+    
+    input, select {
+        width: 330px !important;
+        margin: 0 !important;
+    }
+    
+    #exptime1, #exptime2 {
+        width: 110px !important;
+    }
+    
+    #exptime2 {
+        margin-left: 10px !important;
+    }
+    
+    .savecard_h6Container input, h6.CustomerCSS-wallet_Echeck input, .CardContainer > h6.checkbox input {
+        width: auto !important;
+    }
+    
+    .historycards select {
+        width: 100% !important;
+    }
+    
+    .ccinput-issavecard {
+        float: left;
+        clear: none;
+        width: auto;
+        margin-right: 20px;
+    }
+    
+    .setdefaultwaleet {
+        float: right;
+        clear: none;
+        width: auto;
+    }
+
+    }
+    
+    @media (min-width: 0) and (max-width: 768px){
+                
+                
+        .Title, .NewWalletCard, .MiddleInitial, #billaddress h5, #payment h5 {
+            display: none !important;
+        }
+        
+        .credit_box {
+            background-color: inherit;
+            padding: 10px;
+        }
+        
+        .container {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        html {
+            overflow: hidden;
+        }
+        
+        .billing {
+            padding: 10px;
+        }
+        
+        #trxL2Field, #summary, .buttonBox, .buttonContainer.buttonContainer-CheckoutPage, #trxL3Field, #trxHeadUserDefinedField, #trxLineUserDefinedField, #shipaddress {
+            visibility: hidden;
+            position: absolute;
+        }
+        
+        .CardContainer .RContainer {
+             display:   revert;
+            /*! left: 600px; */
+            z-index:99999;
+        }
+        
+            .CardContainer .RContainer img {
+                width: 36px;
+                height: 36px;
+            }
+        
+        .historycards {
+            position: relative !important;
+            top: 0 !important;
+            left: 0 !important;
+            margin: 0 !important;
+            width: 670px;
+            z-index: 9999;
+            display: block;
+            /*! margin-top: 11px !important; */
+        }
+        
+        body {
+            background: inherit;
+        }
+        .ContainerSub {
+                /*! position: absolute; */
+                /*! top: 50%; */
+                position: relative;
+                display: block;
+                margin-top: 5%;
+                /*! margin-top: 15px !important; */
+            }
+        .CardContainer .row div:nth-child(3) {
+            left: -33%;
+        }
+        
+        .billing .row > div:nth-child(3) {
+            margin-left: 8.33333333%;
+            right: 8.33333333%;
+            top: -150px;
+        }
+        
+        .gdw p {
+            width: 100%;
+        }
+        
+        .CardContainer .row > div:nth-child(6) {
+            margin-left: 8.33333333%;
+            right: 8.33333333%;
+        }
+        
+        #Payment {
+            width: 100% !important;
+            min-height: 260px;
+            max-width: 1010px;
+            margin-left: 2px !important;
+            float: none !important;
+        }
+        
+            .n-section-wallecardcontent, #payment > div {
+                width: 100%;
+                height: 100%;
+            }
+        
+        .CardContainer {
+            min-height: 230px;
+            /*! width: 100%; */
+            height: 100%;
+            float: none;
+            clear: inherit;
+            overflow: initial;
+            background: inherit;
+            position: relative;
+            padding: 0;
+            margin-bottom: 0;
+            /*! margin-top: 0; */
+            box-sizing: border-box;
+            display: block;
+            /*! margin-top: 11px !important; */
+        }
+        
+        .AuthorizeCode {
+            position: relative;
+            max-width: 333px;
+            /* left: -33%;
+            top: 61px; */
+        }
+        
+        .checkbox {
+            position: relative;
+            /* top: -80px; */
+        }
+        .State {
+                position: relative;
+                float: left;
+                /*! margin-top: 58%; */
+                left: 0;
+                width: 100% !important;
+                margin-top: 15px !important;
+            }
+        .Zip {
+                position: relative;
+                left: 0;
+                /*! margin-top: 96%; */
+                width: 100% !important;
+                margin-top: 15px !important;
+            }
+        .Country, #billaddress > #Billto_CountryCode, .Country_CreateWallet {
+            position: relative;
+             /*! left: 340px; */
+            /*! top: 150px; */
+        }
+        
+        .walletBilltoPhone {
+            position: relative;
+            left: 0;
+            /*! top: 222px; */
+        }
+        
+        .Email_CreateWallet, #billaddress > #Billto_Email {
+            position: relative;
+            /*! left: 340px; */
+            /*! top: 222px; */
+        }
+        
+        #paybutton, .CardContainer .row div:nth-child(2) {
+            visibility: hidden;
+        }
+        
+        #WalletECheck_ABANumber, #WalletECheck_SSN {
+            margin-left: 4px;
+        }
+        
+        .Checkoutpage {
+            margin: 0 !important;
+            width: 100% !important;
+            overflow: inherit !important;
+        }
+        
+        #NewBillAddresses_AddressLine1, #NewBillAddresses_AddressLine2, #Billto_AddressLine2, #Billto_AddressLine1 {
+            margin-bottom: 3px !important;
+        }
+        
+        
+        .City {
+                position: relative;
+                float: left;
+                margin-top: 39%;
+                left: 0;
+                margin-top: 15px !important;
+            }
+        
+        .Checkoutpage #payment .CardContainer .CheckNumber, .Wallet #payment .CardContainer .CheckNumber {
+                position: relative !important;
+                /*! top: 15% !important; */
+                margin: 0 !important;
+                float: left;
+                /*! margin-top: 15% !important; */
+                width: 100%;
+                margin-top: 11px !important;
+            }
+        .Wallet #payment .CardContainer .CheckNumber {
+            top: 72px !important;
+        }
+        
+        
+        .Checkoutpage #payment .CardContainer .ABANumber, .Wallet #payment .CardContainer .ABANumber {
+                position: relative !important;
+                /*! top:  16% !important; */
+                margin: 0 !important;
+                /*! margin-top: 47% !important; */
+                width: 100%;
+                margin-top: 11px !important;
+            }
+        .Wallet #payment .CardContainer .ABANumber {
+            /*! top: 144px !important; */
+        }
+        
+        
+        .Checkoutpage #payment .CardContainer .DS_Container .Driverlic, .Wallet #payment .CardContainer .DS_Container .Driverlic {
+                position: absolute !important;
+                top: 0 !important;
+                left: 340px !important;
+                margin: 0 !important;
+            }
+            .Checkoutpage #payment .CardContainer .CardNumber, .Wallet #payment .CardContainer .CardNumber {
+                margin: 0 !important;
+                padding: 0 !important;
+                left: 0 !important;
+                position: absolute !important;
+                /*! top: 144px !important; */
+            }
+        .Checkoutpage #payment .CardContainer .CardNumber, .Wallet #payment .CardContainer .CardNumber {
+                margin: 0 !important;
+                padding: 0 !important;
+                left: 0 !important;
+                position: relative !important;
+                /*! top: 66%; */
+                display: block;
+                margin-top: 13%;
+                padding-top: 13%;
+                /*! width: 100% !important; */
+                /*! height: 100% !important; */
+            }
+            .Checkoutpage #payment .CardContainer .DS_Container .Driverlic, .Wallet #payment .CardContainer .DS_Container .Driverlic {
+                position: relative !important;
+                /*! top:  9% !important; */
+                left: 0 !important;
+                /*! margin: 0 !important; */
+                /*! margin-top: 48% !important; */
+                display: block;
+                margin-top: 11px !important;
+            }
+        .Wallet #payment .CardContainer .CardNumber {
+             /*! top: 72px !important; */
+        }
+        
+        .Checkoutpage #payment .CardContainer > .CardDate, .Wallet #payment .CardContainer > .CardDate {
+             position: relative !important;
+            /*! top: 144px; */
+            /*! left: 340px !important; */
+            width: 108% !important;
+        }
+        
+        .Wallet #payment .CardContainer > .CardDate {
+            /*! top: 72px; */
+        }
+        .Checkoutpage #payment .CardContainer .CardNumber .CardDate, .Wallet #payment .CardContainer .CardNumber .CardDate {
+                position: relative;
+                left: 0;
+                margin: 0;
+                /*! margin-top: 13%; */
+                width: 108% !important;
+                margin-top: 15px !important;
+            }
+        .Checkoutpage #payment .CardContainer .CardNumber .cvv2, .Wallet #payment .CardContainer .CardNumber .cvv2 {
+                left: 0;
+                margin: 0;
+                position: relative;
+                left: 0;
+                margin: 0;
+                /*! margin-top: 20%; */
+                float: left;
+                width: 100%;
+                margin-top: 15px !important;
+            }
+        .Wallet #payment .CardContainer .CardNumber .cvv2 {
+            top: 0;
+        }
+        
+        .Checkoutpage #payment .CardContainer .AuthorizeCode, .Wallet #payment .CardContainer .AuthorizeCode {
+                position: relative !important;
+                /*! top: 20.5%; */
+                left: 0;
+            }
+        
+        .Wallet #payment .CardContainer .AuthorizeCode {
+            top: 144px;
+        }
+        .Checkoutpage #payment .CardContainer .savecard_h6Container, .Wallet #payment .CardContainer .savecard_h6Container {
+                position: relative !important;
+                /*! top: 47%!important; */
+                /*! margin-top: 8%; */
+                margin-top: 11px !important;
+                top:1px!important;
+                /*! padding-top: 77px; */
+            }
+        .Wallet #payment .CardContainer .savecard_h6Container {
+            top: 216px;
+        }
+        
+        .Checkoutpage #payment .CardContainer .AccountType, .Wallet #payment .CardContainer .AccountType {
+            position: relative !important;
+            /*! top: 15% !important; */
+            left: 0 !important;
+            margin: 0 !important;
+            /*! margin-top: 11px !important; */
+            /*! padding-top:  80px !important; */
+        }
+        .Wallet #payment .CardContainer .AccountType {
+            /*! top: 72px !important; */
+        }
+        
+        .Checkoutpage #payment .CardContainer .NameOnCard, .Wallet #payment .CardContainer .NameOnCard {
+            position: relative !important;
+            /*! top: 72px !important; */
+            left: 0 !important;
+            margin: 0 !important;
+            display: block;
+            width: auto;
+            margin-top: 11px !important;
+        }
+        
+        .Wallet #payment .CardContainer .NameOnCard {
+            top: 0 !important;
+        }
+        
+        .Checkoutpage #payment .CardContainer .NameOnCard .LastName, .Wallet #payment .CardContainer .NameOnCard .LastName {
+                margin-left: 0 !important;
+                position: relative;
+                float: left;
+                /*! top: inherit; */
+                left: 0;
+                width: 100%;
+                margin-top: 15px !important;
+            }
+        .Checkoutpage #payment .CardContainer .DS_Container, .Wallet #payment .CardContainer .DS_Container {
+            position: relative !important;
+            /*! top: 288px !important; */
+            /*! left: 0 !important; */
+            width: 100% !important;
+            /*! height: 100%; */
+        }
+        
+        .Wallet #payment .CardContainer .DS_Container {
+            top: 216px !important;
+        }
+        .Checkoutpage #payment .CardContainer .DS_Container .SSN, .Wallet #payment .CardContainer .DS_Container .SSN {
+                position: relative !important;
+                left: 0 !important;
+                margin: 0 !important;
+                /*! margin-top: 65% !important; */
+                margin-top: 11px !important;
+            }
+        .Checkoutpage #payment .CardContainer > .Driverlic, .Wallet #payment .CardContainer > .Driverlic {
+            position: relative !important;
+            /*! top: 288px !important; */
+            /*! left: 340px !important; */
+            margin: 0 !important;
+        }
+        
+        .Wallet #payment .CardContainer > .Driverlic {
+            /*! top: 216px !important; */
+        }
+        
+        .Checkoutpage #payment .CardContainer > .SSN, .Wallet #payment .CardContainer > .SSN {
+            position: relative !important;
+            /*! top: 288px !important; */
+            left: 0 !important;
+            margin: 0 !important;
+        }
+        
+        .Wallet #payment .CardContainer > .SSN {
+            /*! top: 216px !important; */
+        }
+        
+        .Wallet .CustomerCSS-wallet_Echeck {
+            position: relative !important;
+            /*! top: 288px !important; */
+            left: 0 !important;
+            margin: 0 !important;
+            margin-top: 15px !important;
+        }
+        .CardContainer > h6.checkbox, .Checkoutpage #payment .CardContainer .AccountNumber, .Wallet #payment .CardContainer .AccountNumber {
+                position: relative !important;
+                /*! top:  15% !important; */
+                left: 0 !important;
+                margin: 0 !important;
+                /*! margin-top: 33% !important; */
+                margin-top: 11px !important;
+            }
+        .Wallet #payment .n-section-wallecardcontent .CardContainer > h6.checkbox, .Wallet #payment .CardContainer .AccountNumber {
+            /*! top: 144px !important; */
+        }
+        
+        .Fix_CC {
+            border-bottom: none;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        #WalletECheck_SSN, #WalletECheck_ABANumber, #WalletECheck_DriverLicense {
+            margin-left: 0;
+        }
+        
+        input, select {
+            width: 330px !important;
+            margin: 0 !important;
+        }
+        
+        #exptime1, #exptime2 {
+            width: 110px !important;
+        }
+        
+        #exptime2 {
+            margin-left: 10px !important;
+        }
+        
+        .savecard_h6Container input, h6.CustomerCSS-wallet_Echeck input, .CardContainer > h6.checkbox input {
+            width: auto !important;
+        }
+        
+        .historycards select{
+                left: 0;
+            }
+        
+        .setdefaultwaleet {
+            float: right;
+            /*clear: none;
+            width: auto;*/
+        }
+        #NewBillAddresses_CountryCode{
+                /*! margin-top: 82% !important; */
+                position: relative;
+                left: 0;
+            }
+            .Trx_BillPhone{
+                /*! top: 100%; */
+                /*! margin-top: 79%; */
+                position: relative;
+                margin-top: 15px !important;
+            }
+            label.Trx_BillEmail{
+                /*! margin-top: 5%; */
+                position: relative;
+                margin-top: 15px !important;
+            }
+            input.NewBillAddresses_Email{
+                position: relative;
+                top: 1%;
+            }
+            label.Trx_BillCountry.redtext
+            {
+                /*! margin-top: 75%; */
+                position: relative;
+                left: 0;
+                margin-top: 15px !important;
+            }
+                .Checkoutpage #payment .CardContainer .CardNumber .CardTypeNumber.redtext{
+               margin-top: 15px !important;
+                }
+            .savecard_h6Container .ccinput-issavecard{
+                margin-top:15px;
+            }
+    .waitprogresshide{
+    zoom:0.85;
+}
+    }
