@@ -1,0 +1,748 @@
+body {
+    background-color: transparent;
+}
+
+input,
+div {
+    box-sizing: border-box;
+}
+
+label {
+    width: 100%;
+}
+
+.redtext:after {
+    display: none;
+}
+
+.Title {
+    display: none;
+}
+/*todo check what's the element*/
+#summary h5,
+.setupid,
+.trxtype,
+.batch,
+.paylater,
+.currency,
+.historycards {
+    display: none;
+}
+
+#summary {
+    width: 100% !important;
+    padding: 0 20px 1px 40px;
+}
+
+    #summary #TrxAmount {
+        border: 0px;
+        border-bottom: 1px solid #d6d6d6;
+        width: 200px !important;
+        padding-left: 30px !important;
+        font-size: 20px !important;
+        font-weight: 700 !important;
+        float:none;
+    }
+
+    #summary .total label {
+        color: #999999;
+    }
+
+/*Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #summary .total .symbol {
+        width: auto;
+        border: 0px;
+        font-size: 20px !important;
+        font-weight: 700 !important;
+        position: absolute;
+        top: 36px;
+        display: inline-block;
+        left: 6%;
+    }
+}
+
+/* Safari 10.1+ */
+@media not all and (min-resolution:.001dpcm) {
+    @media {
+        #summary .total .symbol {
+            width: auto;
+            border: 0px;
+            font-size: 20px !important;
+            font-weight: 700 !important;
+            position: absolute;
+            top: 38px;
+            display: inline-block;
+            left: 6%;
+        }
+    }
+}
+
+/*Firefox*/
+@-moz-document url-prefix() {
+    #summary .total .symbol {
+        width: auto;
+        border: 0px;
+        font-size: 20px !important;
+        font-weight: 700 !important;
+        position: absolute;
+        top: 41px;
+        display: inline-block;
+        left: 6%;
+    }
+}
+
+/*IE 11*/
+@media screen and(-ms-high-contrast:active),(-ms-high-contrast:none) {
+    #summary .total .symbol {
+        width: auto;
+        border: 0px;
+        font-size: 20px !important;
+        font-weight: 700 !important;
+        position: absolute;
+        top: 36px;
+        display: inline-block;
+        left: 6%;
+    }
+}
+
+
+.validation-summary-errors {
+    margin-left: 20px;
+}
+/*******************this is for payfabric wallet host page*/
+.Wallet {
+    /*******************wallet payment information*/
+    /*******************wallet billing information*/
+}
+
+    .Wallet select,
+    .Wallet input {
+        border-radius: 0px !important;
+        height: 40px;
+        margin-bottom: 15px;
+        width: 100% !important;
+    }
+
+    .Wallet label {
+        color: #999999;
+    }
+
+    .Wallet #paybutton {
+        margin-top: 30px;
+    }
+
+    .Wallet .buttonContainer,
+    .Wallet .buttonContainer_S {
+        display: none;
+        justify-content: center;
+        width: 100%;
+        flex-direction: row-reverse;
+    }
+
+        .Wallet .buttonContainer input,
+        .Wallet .buttonContainer_S input {
+            width: 137px !important;
+            border-radius: 5px;
+        }
+
+        .Wallet .buttonContainer .n-button-create,
+        .Wallet .buttonContainer_S .n-button-create {
+            margin-right: 5px !important;
+            border-radius: 5px !important;
+        }
+
+        .Wallet .buttonContainer .n-button-cancel,
+        .Wallet .buttonContainer_S .n-button-cancel {
+            color: #30a6e9;
+            background: white;
+            margin-left: 5px !important;
+            border-radius: 5px !important;
+        }
+
+    .Wallet #payment {
+        background: white;
+        box-shadow: none;
+        padding: 0 20px 1px 20px;
+        clear: none;
+        float: left;
+        width: 50%;
+    }
+
+        .Wallet #payment input {
+            border: 0px;
+        }
+
+        .Wallet #payment h3 {
+            display: none;
+        }
+
+        .Wallet #payment h6.ccinput-issavecard {
+            display: none;
+        }
+
+        .Wallet #payment legend {
+            display: none;
+        }
+
+        .Wallet #payment .CardContainer {
+            width: 100% !important;
+            background: white;
+            padding: 0px !important;
+        }
+
+            .Wallet #payment .CardContainer .CardDate {
+                width: 100px;
+            }
+
+                .Wallet #payment .CardContainer .CardDate input {
+                    display: flex;
+                    width: 45px !important;
+                    height: 40px !important;
+                    border-top: 0px !important;
+                    border-left: 0px !important;
+                    border-right: 0px !important;
+                    border-bottom: 1px solid #d6d6d6 !important;
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #515151;
+                }
+
+                .Wallet #payment .CardContainer .CardDate #exptime1 {
+                    margin-right: 10px;
+                }
+
+            .Wallet #payment .CardContainer .NameOnCard {
+                width: 100%;
+            }
+
+                .Wallet #payment .CardContainer .NameOnCard input[type=text] {
+                    width: 100% !important;
+                    margin-bottom: 13px;
+                }
+
+                .Wallet #payment .CardContainer .NameOnCard .FirstName {
+                    padding-right: 5px;
+                    width: 50%;
+                }
+
+                .Wallet #payment .CardContainer .NameOnCard .LastName {
+                    margin-left: 0;
+                    padding-left: 5px;
+                    width: 50%;
+                }
+
+            .Wallet #payment .CardContainer .ccinput-cardnumber,
+            .Wallet #payment .CardContainer .ccinput-accountnumber,
+            .Wallet #payment .CardContainer .ccinput-abanumber,
+            .Wallet #payment .CardContainer .ccinput-firstname,
+            .Wallet #payment .CardContainer .ccinput-lastname {
+                border-bottom: 1px solid #d6d6d6;
+                width: 78% !important;
+                max-width: 100%;
+                font-size: 20px !important;
+                font-weight: 700 !important;
+                color: #515151 !important;
+            }
+
+            .Wallet #payment .CardContainer .CustomerCSS-wallet_Echeck,
+            .Wallet #payment .CardContainer .checkbox {
+                display: flex;
+            }
+
+                .Wallet #payment .CardContainer .CustomerCSS-wallet_Echeck input,
+                .Wallet #payment .CardContainer .checkbox input {
+                    width: auto !important;
+                    height: auto;
+                }
+
+            .Wallet #payment .CardContainer .AccountType,
+            .Wallet #payment .CardContainer .CardNumber {
+                padding-right: 0px;
+            }
+
+            .Wallet #payment .CardContainer .RContainer {
+                left: auto;
+                right: 15px;
+                display: block;
+            }
+
+            .Wallet #payment .CardContainer #WalletECheck_AccountType {
+                width: 100% !important;
+            }
+
+            .Wallet #payment .CardContainer .AccountNumber,
+            .Wallet #payment .CardContainer .ABANumber {
+                width: 50%;
+                padding-left: 5px;
+                margin-left: 0 !important;
+            }
+
+            .Wallet #payment .CardContainer .AccountNumber {
+                padding-right: 5px;
+                padding-left: 0;
+            }
+
+            .Wallet #payment .CardContainer .EntryOption {
+                height: 60px;
+            }
+
+            .Wallet #payment .CardContainer .ccinput-rawdata {
+                width: 100% !important;
+                max-width: 100%;
+                min-width: 100%;
+                height: 123px !important;
+                min-height: 123px;
+                resize: none;
+            }
+
+            .Wallet #payment .CardContainer .ccinput-rawdata-safari {
+                height: 122px !important;
+                min-height: 122px;
+            }
+
+            .Wallet #payment .CardContainer .BluefinRawData {
+                padding-bottom: 10px;
+            }
+
+    .Wallet #billaddress {
+        background: white;
+        box-shadow: none;
+        padding: 0 20px 20px 20px;
+        clear: none;
+        float: left;
+        width: 50%;
+    }
+
+        .Wallet #billaddress .NewWalletCard,
+        .Wallet #billaddress legend {
+            width: 100%;
+            font-size: 15px;
+            font-weight: 700;
+            text-align: center;
+            padding: 10px 0;
+            background-image: none;
+            display: none;
+        }
+
+        .Wallet #billaddress .City {
+            padding-right: 1px !important;
+            width: 30%;
+        }
+
+        .Wallet #billaddress .State {
+            padding-right: 1px !important;
+            width: 33%;
+        }
+
+        .Wallet #billaddress .Zip {
+            padding-right: 0 !important;
+            width: 37%;
+        }
+
+        .Wallet #billaddress #Billto_AddressLine1 {
+            margin-bottom: 5px;
+        }
+
+    .Wallet #Billto_AddressLine3,
+    .walletBilltoPhone,
+    #Billto_Phone1,
+    .Email_CreateWallet,
+    #Billto_Email,
+    .Driverlic,
+    .SSN {
+        display: none;
+    }
+/*******************this is for payfabric checkout host page*/
+.Checkoutpage {
+    overflow: inherit;
+    width: 100%;
+}
+
+    .Checkoutpage .errors {
+        width: 100%;
+    }
+
+    .Checkoutpage select,
+    .Checkoutpage input[type="text"],
+    .Checkoutpage input[type="tel"] {
+        border-radius: 0px !important;
+        height: 40px;
+        margin-bottom: 15px;
+        width: 100% !important;
+    }
+
+    .Checkoutpage label {
+        color: #999999;
+    }
+
+    .Checkoutpage h5 {
+        border-bottom: 0px;
+    }
+
+    .Checkoutpage .buttonContainer {
+        display: none;
+        padding-top: 20px;
+    }
+
+        .Checkoutpage .buttonContainer input[type=button] {
+            width: 137px !important;
+            height: 40px;
+            border-radius: 5px !important;
+        }
+
+        .Checkoutpage .buttonContainer #btn_Process {
+            background-image: url(data:image/png;base64,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);
+            background-repeat: no-repeat;
+            border: none;
+            background-position: 192px 10px;
+            background-size: 14px;
+        }
+
+        .Checkoutpage .buttonContainer .btn-process {
+            width: 100%;
+            background: #45a4e6;
+            border: none;
+            height: 34px;
+            color: white;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+            .Checkoutpage .buttonContainer .btn-process i {
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                background-image: url(data:image/png;base64,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);
+                background-size: 14px;
+                background-repeat: no-repeat;
+                position: relative;
+                top: 2px;
+                left: -5px;
+            }
+
+    .Checkoutpage .buttonContainer-CheckoutPage {
+        width: 100%;
+    }
+
+    .Checkoutpage .Fix_CC {
+        background: white;
+        box-shadow: none;
+        padding: 0 20px 20px 20px;
+        clear: none;
+        float: left;
+        width: 50%;
+        margin: 0px;
+    }
+
+        .Checkoutpage .Fix_CC #shipaddress,
+        .Checkoutpage .Fix_CC #trxL2Field,
+        .Checkoutpage .Fix_CC #trxL3Field,
+        .Checkoutpage .Fix_CC #CheckoutPageLogo,
+        .Checkoutpage .Fix_CC #trxHeadUserDefinedField {
+            display: none;
+        }
+
+        .Checkoutpage .Fix_CC #shipaddress {
+            margin-left: 20px;
+        }
+
+        .Checkoutpage .Fix_CC #billaddress {
+            width: 100%;
+        }
+
+            .Checkoutpage .Fix_CC #billaddress h5 {
+                display: none;
+            }
+
+            .Checkoutpage .Fix_CC #billaddress .ContainerSub {
+                width: 100%;
+                padding: 0 20px 20px 20px;
+            }
+
+            .Checkoutpage .Fix_CC #billaddress .City {
+                padding-right: 1px !important;
+                width: 30%;
+            }
+
+            .Checkoutpage .Fix_CC #billaddress .State {
+                padding-right: 1px !important;
+                width: 33%;
+            }
+
+            .Checkoutpage .Fix_CC #billaddress .Zip {
+                padding-right: 0 !important;
+                width: 37%;
+            }
+
+            .Checkoutpage .Fix_CC #billaddress #Billto_AddressLine1 {
+                margin-bottom: 5px;
+            }
+
+            .Checkoutpage .Fix_CC #billaddress #NewBillAddresses_AddressLine3,
+            .Checkoutpage .Fix_CC #billaddress .Trx_BillPhone,
+            .Checkoutpage .Fix_CC #billaddress .phone,
+            .Checkoutpage .Fix_CC #billaddress .Trx_BillEmail,
+            .Checkoutpage .Fix_CC #billaddress #NewBillAddresses_Email {
+                display: none;
+            }
+
+    .Checkoutpage #summary {
+        width: 100%;
+    }
+
+    .Checkoutpage #payment {
+        background: white;
+        box-shadow: none;
+        padding: 0 20px 1px 20px;
+        clear: none;
+        float: left;
+        width: 50%;
+        margin-left: 0px;
+    }
+
+        .Checkoutpage #payment h5 {
+            display: none;
+        }
+
+        .Checkoutpage #payment .CardContainer {
+            width: 100% !important;
+            background: white;
+            padding: 0 20px !important;
+        }
+
+            .Checkoutpage #payment .CardContainer .CardDate {
+                width: 50%;
+            }
+
+                .Checkoutpage #payment .CardContainer .CardDate input {
+                    display: flex;
+                    width: 45px !important;
+                    height: 40px !important;
+                    border-top: 0px !important;
+                    border-left: 0px !important;
+                    border-right: 0px !important;
+                    border-bottom: 1px solid #d6d6d6 !important;
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #515151;
+                }
+
+                .Checkoutpage #payment .CardContainer .CardDate #exptime1 {
+                    margin-right: 10px;
+                }
+
+            .Checkoutpage #payment .CardContainer .cvv2 {
+                margin: 0px;
+                width: 50%;
+                padding-left: 5px;
+            }
+
+                .Checkoutpage #payment .CardContainer .cvv2 input {
+                    border: 0px;
+                    border-bottom: 1px solid #d6d6d6;
+                    width: 45px !important;
+                    height: 40px !important;
+                    font-size: 20px !important;
+                    font-weight: 700 !important;
+                    color: #515151 !important;
+                }
+
+            .Checkoutpage #payment .CardContainer .NameOnCard {
+                width: 100%;
+            }
+
+                .Checkoutpage #payment .CardContainer .NameOnCard input[type=text] {
+                    width: 100% !important;
+                    margin-bottom: 13px;
+                }
+
+                .Checkoutpage #payment .CardContainer .NameOnCard .FirstName {
+                    padding-right: 5px;
+                    width: 50%;
+                }
+
+                .Checkoutpage #payment .CardContainer .NameOnCard .LastName {
+                    margin-left: 0;
+                    padding-left: 5px;
+                    width: 50%;
+                }
+
+            .Checkoutpage #payment .CardContainer .ccinput-cardnumber,
+            .Checkoutpage #payment .CardContainer .ccinput-accountnumber,
+            .Checkoutpage #payment .CardContainer .ccinput-abanumber,
+            .Checkoutpage #payment .CardContainer .ccinput-firstname,
+            .Checkoutpage #payment .CardContainer .ccinput-lastname {
+                border: 0px;
+                border-bottom: 1px solid #d6d6d6;
+                width: 78% !important;
+                max-width: 100%;
+                font-size: 20px !important;
+                font-weight: 700 !important;
+                color: #515151 !important;
+            }
+
+            .Checkoutpage #payment .CardContainer .CustomerCSS-wallet_Echeck,
+            .Checkoutpage #payment .CardContainer .checkbox {
+                display: flex;
+            }
+
+                .Checkoutpage #payment .CardContainer .CustomerCSS-wallet_Echeck input,
+                .Checkoutpage #payment .CardContainer .checkbox input {
+                    width: auto !important;
+                    height: auto;
+                }
+
+            .Checkoutpage #payment .CardContainer .RContainer {
+                left: auto;
+                right: 15px;
+                display: block;
+            }
+
+            .Checkoutpage #payment .CardContainer #WalletECheck_AccountType {
+                width: 100% !important;
+            }
+
+            .Checkoutpage #payment .CardContainer .AccountNumber,
+            .Checkoutpage #payment .CardContainer .ABANumber {
+                width: 50%;
+                padding-left: 5px;
+                margin-left: 0 !important;
+            }
+
+            .Checkoutpage #payment .CardContainer .AccountNumber {
+                padding-right: 5px;
+                padding-left: 0;
+            }
+
+            .Checkoutpage #payment .CardContainer .savecard_h6Container {
+                float: left;
+                height: 56px;
+            }
+
+                .Checkoutpage #payment .CardContainer .savecard_h6Container h6 {
+                    float: none;
+                }
+
+            .Checkoutpage #payment .CardContainer .ccinput-rawdata {
+                width: 100% !important;
+                max-width: 100%;
+                min-width: 100%;
+                height: 83px !important;
+                min-height: 83px;
+                resize: none;
+            }
+
+            .Checkoutpage #payment .CardContainer .BluefinRawData {
+                padding-bottom: 10px;
+            }
+
+    .Checkoutpage .cvv2-help {
+        cursor: pointer;
+        vertical-align: middle;
+        margin-left: 5px;
+    }
+
+    .Checkoutpage .cvv2-tooltip {
+        position: absolute;
+        top: 120px;
+        border: 1px solid grey;
+        display: block;
+        left: 280px;
+    }
+
+        .Checkoutpage .cvv2-tooltip img {
+            border: 1px solid #efefef;
+        }
+
+    .Checkoutpage .hide-cvv2-tooltip {
+        display: none;
+    }
+/*******************this is for payfabric checkout host page for EMV*/
+#processModeSwitch {
+    text-align: right;
+    padding: 10px 20px 10px 0px;
+    background-color: #eee;
+}
+
+.emvProcess .waitprogresshide {
+    background: #eee;
+}
+/*responsive*/
+@media (min-width: 0) and (max-width: 400px) {
+    .City,
+    .State,
+    .Zip {
+        width: 100%;
+        padding-right: 0 !important;
+    }
+
+    .Wallet .AccountNumber,
+    .ABANumber {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .Wallet #payment .FirstName {
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .Wallet #payment .LastName {
+        margin-left: 0;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .Wallet .CardNumber {
+        padding-right: 10px;
+    }
+
+    .Wallet .RContainer {
+        display: none;
+    }
+}
+
+@media (min-width: 0) and (max-width: 768px) {
+    .Wallet #billaddress {
+        width: 100%;
+    }
+
+    .Wallet #payment {
+        width: 100%;
+        padding: 0;
+    }
+
+    .Wallet .CardContainer {
+        padding: 5px !important;
+    }
+
+    .Wallet #billaddress {
+        padding: 0 5px 20px 5px;
+    }
+
+    .Wallet #paybutton {
+        padding-right: 0px !important;
+    }
+}
+
+.ExpDate {
+    width: 120px;
+}
+
+input::-webkit-input-placeholder {
+    color: #999999;
+}
+
+input::-moz-placeholder {
+    color: #999999;
+}
+
+input::-ms-placeholder {
+    color: #999999;
+}
+
+input::placeholder {
+    color: #999999;
+}
