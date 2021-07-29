@@ -1,0 +1,268 @@
+/*******************base*/
+body {
+    background-color: transparent;
+}
+
+input, div {
+    box-sizing: border-box;
+}
+
+label {
+    width: 100%
+}
+
+.redtext:after{
+    display:none;
+}
+.Title {
+    display: none;
+}
+
+input[type='button'], input[type='submit'], input[type='reset'], a.Button {
+    border-radius: 0;
+}
+
+/*todo check what's the element*/
+#summary, .Fix_CC, .historycards {
+    display: none;
+}
+
+.Checkoutpage .buttonContainer {
+    float: left;
+}
+
+.buttonContainer-CheckoutPage {
+    width: 450px;
+    height :100%;
+    padding-right:10px;
+}
+
+.validation-summary-errors {
+    margin-left: 20px;
+}
+
+.CardContainer {
+    width: 100%;
+    margin: 0;
+}
+
+.Wallet #paybutton {
+    float: right;
+    padding-right: 20px!important;
+    margin-top:-30px;
+}
+
+.Wallet #paybutton #btn_Save{
+    margin-right: 0!important;
+}
+
+
+.Wallet #paybutton #btn_Close{
+    display:none;
+}
+
+
+.Wallet .buttonContainer, .buttonContainer_S {
+    padding-top: 0px;
+    width: 100%;
+}
+
+/*******************wallet payment information*/
+.Wallet #payment {
+    width: 50%;
+    padding: 0;
+}
+
+.Wallet #payment h3 {
+    display: none;
+}
+
+.Wallet #payment h6.ccinput-issavecard {
+    display: none;
+}
+.Wallet .NameOnCard{
+    width:100%
+}
+.Wallet #payment .NameOnCard input[type=text] {
+    width: 100% !important;
+    margin-bottom: 13px;
+}
+
+.Wallet #payment .FirstName {
+    padding-right:5px;
+    width: 50%;
+}
+
+.Wallet #payment .LastName {
+    margin-left: 0;
+    padding-left:5px;
+    width: 50%;
+}
+
+#WalletECheck_AccountType {
+    width: 100% !important;
+}
+
+.Wallet .AccountNumber,.ABANumber{
+    width:50%;
+    padding-left:5px;
+    margin-left:0!important;
+}
+
+
+.Wallet .AccountNumber{
+    padding-right:5px;
+    padding-left:0;
+}
+
+input.ccinput-cardnumber,
+input.ccinput-accountnumber,
+input.ccinput-abanumber,
+input.ccinput-firstname,
+input.ccinput-lastname {
+    border: 1px solid #d6d6d6;
+    width: 100% !important;
+    max-width: 100%;
+}
+
+.Wallet .CardNumber{
+    padding-right:70px;
+}
+.Wallet .RContainer{
+    left:auto;
+    right:20px;
+	display:block;
+}
+
+
+/*******************wallet billing information*/
+.Wallet #billaddress {
+    width: 50%;
+    padding: 0 20px 20px 20px;
+}
+
+.City, .State, .Zip {
+    padding-right: 10px !important;
+    width:33.333%;
+}
+
+.Zip {
+    padding-right: 0 !important;
+}
+
+.Wallet #billaddress {
+    clear: none;
+    float: left;
+}
+
+.Wallet #billaddress h3 {
+    display: none;
+}
+
+.Wallet #billaddress select,
+.Wallet #billaddress input {
+    margin-bottom: 15px;
+    width: 100%!important;
+}
+
+.Wallet #billaddress #Billto_AddressLine1 {
+    margin-bottom: 5px;
+}
+
+.Wallet #Billto_AddressLine3, .walletBilltoPhone, #Billto_Phone1, .Email_CreateWallet, #Billto_Email, .Driverlic, .SSN, .NewWalletCard {
+    display: none;
+}
+
+.Checkoutpage #payment, .Checkoutpage #payment, .Checkoutpage #shipaddress {
+    margin-left: 20px;
+}
+/*payment checkout page for credit*/
+.Checkoutpage #payment .CardContainer .ccinput-cardnumber
+{
+float:left;
+clear:both;
+border:1px solid #D6D6D6;
+height20px;
+width:50% !important
+}
+
+.Checkoutpage #payment .CardContainer .CardDate,
+.Checkoutpage #payment .CardContainer .cvv2
+{
+  width:25%
+}
+
+/*payment checkout page for echeck*/
+.Checkoutpage #payment .CardContainer .AccountNumber
+{
+  width:50%
+}
+
+.Checkoutpage #payment .CardContainer .NameOnCard
+{
+ width:100%
+}
+.Checkoutpage #payment .CardContainer .NameOnCard .FirstName
+{
+ width:50%
+}
+.Checkoutpage #payment .CardContainer .NameOnCard .LastName
+{
+ margin-left: 0px !important;
+ padding-left: 5px;
+ width:50%
+}
+
+/*responsive*/
+@media (min-width: 0 ) and (max-width: 400px) {
+    .City, .State, .Zip {
+        width:100%;
+        padding-right:0 !important;
+    }
+
+    .Wallet .AccountNumber,.ABANumber{
+        width:100%;
+        padding-right:0;
+		padding-left:0;
+    }
+
+    .Wallet #payment .FirstName {
+        padding-right:0;
+        width: 100%;
+    }
+
+   .Wallet #payment .LastName {
+        margin-left: 0;
+        padding-left:0;
+        width: 100%;
+    }
+	
+	.Wallet .CardNumber{
+		padding-right:10px;
+	}
+	.Wallet .RContainer{
+		display:none;
+	}
+}
+
+@media (min-width: 0 ) and (max-width: 768px) {
+    .Wallet #billaddress {
+        width: 100%;
+    }
+
+    .Wallet #payment {
+        width: 100%;
+        padding-right:0;
+    }
+
+    .Wallet .CardContainer{
+        padding-bottom:5px;
+    }
+	
+	.Wallet #billaddress
+	{
+		padding:0 0 20px 0;
+	}
+	.Wallet #paybutton {
+    padding-right: 0px!important;
+}

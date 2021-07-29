@@ -1,0 +1,54 @@
+#summary, .Fix_CC, .historycards
+{
+    display: none;
+}
+#payment h6.ccinput-issavecard
+{
+    display: none;
+}
+#payment
+{
+  width:420px;
+}
+.Wallet #billaddress
+{
+    clear: none;
+     float:left;
+}
+.buttonContainer
+{
+    margin-right: 70px !important;
+    float: right;
+}
+input[type='button'], input[type='submit'], input[type='reset'], a.Button
+{
+    border-radius: 0;
+}
+.Checkoutpage .buttonContainer
+{
+    float: left;
+}
+.Title
+{
+    display: none;
+}
+body
+{
+    background-color: transparent;
+}
+.buttonContainer-CheckoutPage
+{
+    width: 450px;
+}
+.Checkoutpage #payment, .Checkoutpage #payment, .Checkoutpage #shipaddress
+{
+    margin-left: 20px;
+}
+.buttonContainer
+{
+    padding-top: 0;
+}
+.validation-summary-errors
+{
+    margin-left: 20px;
+}
